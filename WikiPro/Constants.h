@@ -28,5 +28,6 @@
 #define ___kDataKeyText                     @"___kDataKeyText"
 #define ___kDataKeyTextType                 @"___kDataKeyTextType"
 #define ___kDataKeyTextClickableTokens      @"___kDataKeyTextClickableTokens"
+#define ___kDataKeyImageSize                @"___kDataKeyImageSize"
 
 #endif /* Constants_h */

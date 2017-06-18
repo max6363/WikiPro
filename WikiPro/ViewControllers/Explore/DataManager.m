@@ -113,6 +113,8 @@
                           @"edit source"
                           ]
                 toArray:array];
+    //..
+    [self addText:@"https://upload.wikimedia.org/wikipedia/en/5/5a/IOS_11_Control_Center_iPhone_7_Plus.png" key:___keyImgUrl clickableTokens:@[] toArray:array];
     
     //..
     [self addText:@"The Control Center receives a significant redesign, unifying its different pages into one and allowing users to 3D Touch the icons for additional button options. Sliders let users adjust volume and brightness.[9] The Control Center is customizable via the Settings app, and allows for a wider range of settings features to be shown,[10][11] including cellular service, Low Power Mode, and a shortcut to the Notes app.[12]"
@@ -133,6 +135,9 @@
                           @"edit source"
                           ]
                 toArray:array];
+    
+    //..
+    [self addText:@"https://upload.wikimedia.org/wikipedia/en/c/c8/IOS_11_Siri_iPhone_7_Plus.png" key:___keyImgUrl clickableTokens:@[] toArray:array];
     
     //..
     [self addText:@"The Siri intelligent personal assistant will have a more human voice and support language translation, with English, Chinese, French, German, Italian and Spanish available at launch. It will also support follow-up questions by users.[13] Users will also be able to type to Siri.[14]"
@@ -324,6 +329,15 @@
     d[___kDataKeyText] = text;
     d[___kDataKeyTextType] = key;
     d[___kDataKeyTextClickableTokens] = clickableTokens;
+    [array addObject:d];
+}
+
+- (void)addText:(NSString *)text key:(NSString *)key imageSize:(CGSize)imageSize toArray:(NSMutableArray *)array
+{
+    NSMutableDictionary *d = [NSMutableDictionary dictionary];
+    d[___kDataKeyText] = text;
+    d[___kDataKeyTextType] = key;
+    d[___kDataKeyImageSize] = NSStringFromCGSize(imageSize);
     [array addObject:d];
 }
 
