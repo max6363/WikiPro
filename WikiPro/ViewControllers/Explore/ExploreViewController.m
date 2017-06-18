@@ -25,13 +25,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    /*arrIdentifiers = [NSMutableArray arrayWithObjects:
+    arrIdentifiers = [NSMutableArray arrayWithObjects:
                       @"image_cell",
                       @"title_cell",
                       @"subtitle_cell",
                       @"description_title",
                       @"description_text",
-                      nil];*/
+                      nil];
     
     arrItems = [NSMutableArray array];
     [self prepareDict];
@@ -77,7 +77,7 @@
         
     }];
 }
-/*
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -115,7 +115,8 @@
         
     }
 }
-*/
+
+/*
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -166,19 +167,6 @@
     vc.data = d;
     [self.tabBarController.navigationController pushViewController:vc animated:YES];
     
-}
-
-#pragma mark - Segue
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
-    
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"show_details"]) {
-        
-    }
-}
+}*/
 
 @end

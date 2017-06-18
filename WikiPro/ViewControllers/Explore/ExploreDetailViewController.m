@@ -24,6 +24,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Actions
+-(IBAction)shareButtonClicked:(id)sender
+{
+    NSString *topicToShare = @"Topic Would go here...";
+    
+    NSString *textToShare = @"WikiPro, iOS application...";
+    
+    NSString *textToShare2 = @"\n\ndeveloped by,";
+    
+    NSURL *myWebsite = [NSURL URLWithString:@"http://minhaz.xyz"];
+    
+    NSArray *objectsToShare = @[topicToShare, textToShare, textToShare2, myWebsite];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    [self.view.window.rootViewController presentViewController:activityVC animated:YES completion:nil];
+}
+
 #pragma mark - Segue
 - (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {

@@ -66,18 +66,21 @@
 
 -(IBAction)shareButtonClicked:(id)sender
 {
+    NSString *topicToShare = self.data[kKeyTitle];
+    
     NSString *textToShare = @"WikiPro, iOS application...";
     
     NSString *textToShare2 = @"\n\ndeveloped by,";
     
     NSURL *myWebsite = [NSURL URLWithString:@"http://minhaz.xyz"];
     
-    NSArray *objectsToShare = @[textToShare, textToShare2, myWebsite];
+    NSArray *objectsToShare = @[topicToShare, textToShare, textToShare2, myWebsite];
     
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
     
     [self.view.window.rootViewController presentViewController:activityVC animated:YES completion:nil];
 }
+
 - (IBAction)onSavePageClicked:(UIBarButtonItem *)sender {
     isSaved = !isSaved;
     if (isSaved) {
