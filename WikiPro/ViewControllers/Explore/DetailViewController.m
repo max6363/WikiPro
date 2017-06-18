@@ -11,6 +11,7 @@
 #import "TitleCell.h"
 #import "ParagraphTitleCell.h"
 #import "ParagraphCell.h"
+#import "LanguageViewController.h"
 
 @interface DetailViewController () <UITableViewDataSource,UITableViewDelegate,ParagraphCellDelegate, ParagraphTitleCellDelegate>
 {
@@ -87,7 +88,11 @@
     }
 }
 
+- (IBAction)onLanguageBtClicked:(UIBarButtonItem *)sender {
 
+    LanguageViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"LanguageViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

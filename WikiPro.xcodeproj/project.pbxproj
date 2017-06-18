@@ -19,6 +19,9 @@
 		88AA88BB1EF6977A00232BEA /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88BA1EF6977A00232BEA /* TitleCell.m */; };
 		88AA88BE1EF697C600232BEA /* ParagraphCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88BD1EF697C600232BEA /* ParagraphCell.m */; };
 		88AA88C11EF698A400232BEA /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88C01EF698A400232BEA /* NSString+Utils.m */; };
+		88AF6F351EF6FD0E0014DAF9 /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AF6F341EF6FD0E0014DAF9 /* LanguageViewController.m */; };
+		88AF6F381EF700730014DAF9 /* LanguageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AF6F371EF700730014DAF9 /* LanguageCell.m */; };
+		88AF6F3B1EF7008C0014DAF9 /* LanguageListHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AF6F3A1EF7008C0014DAF9 /* LanguageListHeader.m */; };
 		88D78C8E1EF676A000D17E67 /* ExploreListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D78C8D1EF676A000D17E67 /* ExploreListCell.m */; };
 		88D78C911EF67F2300D17E67 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D78C901EF67F2300D17E67 /* UIView+Utils.m */; };
 		88F2B8AA1EF443350002CE61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F2B8A91EF443350002CE61 /* main.m */; };
@@ -85,6 +88,12 @@
 		88AA88BD1EF697C600232BEA /* ParagraphCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParagraphCell.m; sourceTree = "<group>"; };
 		88AA88BF1EF698A400232BEA /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
 		88AA88C01EF698A400232BEA /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		88AF6F331EF6FD0E0014DAF9 /* LanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageViewController.h; sourceTree = "<group>"; };
+		88AF6F341EF6FD0E0014DAF9 /* LanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageViewController.m; sourceTree = "<group>"; };
+		88AF6F361EF700730014DAF9 /* LanguageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageCell.h; sourceTree = "<group>"; };
+		88AF6F371EF700730014DAF9 /* LanguageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageCell.m; sourceTree = "<group>"; };
+		88AF6F391EF7008C0014DAF9 /* LanguageListHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageListHeader.h; sourceTree = "<group>"; };
+		88AF6F3A1EF7008C0014DAF9 /* LanguageListHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageListHeader.m; sourceTree = "<group>"; };
 		88D78C8C1EF676A000D17E67 /* ExploreListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreListCell.h; sourceTree = "<group>"; };
 		88D78C8D1EF676A000D17E67 /* ExploreListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreListCell.m; sourceTree = "<group>"; };
 		88D78C8F1EF67F2300D17E67 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
@@ -196,6 +205,19 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		88AF6F321EF6FCF30014DAF9 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				88AF6F331EF6FD0E0014DAF9 /* LanguageViewController.h */,
+				88AF6F341EF6FD0E0014DAF9 /* LanguageViewController.m */,
+				88AF6F361EF700730014DAF9 /* LanguageCell.h */,
+				88AF6F371EF700730014DAF9 /* LanguageCell.m */,
+				88AF6F391EF7008C0014DAF9 /* LanguageListHeader.h */,
+				88AF6F3A1EF7008C0014DAF9 /* LanguageListHeader.m */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		88F2B89C1EF443350002CE61 = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +290,7 @@
 		88F2B8DE1EF446730002CE61 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				88AF6F321EF6FCF30014DAF9 /* Language */,
 				881C41E41EF59BD800814619 /* SignIn */,
 				881C41E51EF59BD800814619 /* SignUp */,
 				88F2B8F21EF449040002CE61 /* Explore */,
@@ -671,6 +694,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88AF6F3B1EF7008C0014DAF9 /* LanguageListHeader.m in Sources */,
 				881C41E81EF59BEF00814619 /* SignInViewController.m in Sources */,
 				88F2B8EE1EF447C30002CE61 /* AppLauncher.m in Sources */,
 				88AA88B11EF6827100232BEA /* DetailViewController.m in Sources */,
@@ -687,12 +711,14 @@
 				88AA88BB1EF6977A00232BEA /* TitleCell.m in Sources */,
 				88F2B90F1EF45EB10002CE61 /* UIColor+Utils.m in Sources */,
 				88AA88B81EF696BD00232BEA /* ImageViewCell.m in Sources */,
+				88AF6F381EF700730014DAF9 /* LanguageCell.m in Sources */,
 				88AA88C11EF698A400232BEA /* NSString+Utils.m in Sources */,
 				88AA88BE1EF697C600232BEA /* ParagraphCell.m in Sources */,
 				881C41EB1EF59C0300814619 /* SignUpViewController.m in Sources */,
 				88F2B9011EF449040002CE61 /* ExploreViewController.m in Sources */,
 				88F2B9021EF449040002CE61 /* HistoryViewController.m in Sources */,
 				88D78C911EF67F2300D17E67 /* UIView+Utils.m in Sources */,
+				88AF6F351EF6FD0E0014DAF9 /* LanguageViewController.m in Sources */,
 				88F2B8AA1EF443350002CE61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
