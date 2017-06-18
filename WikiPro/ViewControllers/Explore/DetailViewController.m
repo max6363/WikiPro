@@ -15,6 +15,9 @@
 @interface DetailViewController () <UITableViewDataSource,UITableViewDelegate,ParagraphCellDelegate, ParagraphTitleCellDelegate>
 {
     __weak IBOutlet UITableView *theTableView;
+    __weak IBOutlet UIView *popOverFontSize;
+    __weak IBOutlet UISlider *sliderFontSize;
+    BOOL isSaved;
 }
 @end
 
@@ -24,6 +27,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [popOverFontSize setBorderColor:[UIColor lightGrayColor] borderWidth:.5f cornerRadius:6];
+    
+    // reload table data
     [self reloadTableData];
 }
 
@@ -44,9 +50,44 @@
 - (IBAction)onSearchBtClicked:(id)sender {
     
 }
+
 - (IBAction)onBackBtClicked:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (IBAction)onFontSizeChangeBtClicked:(id)sender {
+//    [self showPopOverForFontSize];
+}
+
+- (IBAction)onSliderForFontSizeValueChanged:(UISlider *)sender {
+    
+}
+
+-(IBAction)shareButtonClicked:(id)sender
+{
+    NSString *textToShare = @"WikiPro, iOS application...";
+    
+    NSString *textToShare2 = @"\n\ndeveloped by,";
+    
+    NSURL *myWebsite = [NSURL URLWithString:@"http://minhaz.xyz"];
+    
+    NSArray *objectsToShare = @[textToShare, textToShare2, myWebsite];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    [self.view.window.rootViewController presentViewController:activityVC animated:YES completion:nil];
+}
+- (IBAction)onSavePageClicked:(UIBarButtonItem *)sender {
+    isSaved = !isSaved;
+    if (isSaved) {
+        UIColor *color = [UIColor colorWithRed:0 green:64/255.0 blue:128/255.0 alpha:1];
+        sender.tintColor = color;
+    } else {
+        sender.tintColor = [UIColor lightGrayColor];
+    }
+}
+
+
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -164,6 +205,32 @@
 - (void)paragraphTitleCell:(ParagraphTitleCell *)paragraphTitleCell didSelectLinkWithText:(NSString *)text
 {
     NSLog(@"Selected: %@", text);
+}
+
+#pragma mark - Show Popover for Font Size
+- (void)showPopOverForFontSize
+{
+    self.view.userInteractionEnabled = NO;
+    
+    NSInteger size = 3;
+    sliderFontSize.value = size;
+    
+    [popOverFontSize removeFromSuperview];
+    
+    UIWindow *window = self.view.window;
+    CGRect f = popOverFontSize.frame;
+    f.origin.x = window.frame.size.width/2 - f.size.width/2;
+    f.origin.y = window.frame.size.height + f.size.height;
+    popOverFontSize.frame = f;
+    [window addSubview:popOverFontSize];
+    
+    f.origin.y = window.frame.size.height - popOverFontSize.frame.size.height - 80;
+    
+    [UIView animateWithDuration:.35 animations:^{
+        popOverFontSize.frame = f;
+    } completion:^(BOOL finished) {
+        self.view.userInteractionEnabled = YES;
+    }];
 }
 
 @end
