@@ -18,5 +18,6 @@
 // ..
 // Dummy Data
 - (NSMutableDictionary *)dummyData0;
+- (NSMutableDictionary *)dummyData1;
 
 @end

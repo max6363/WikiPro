@@ -417,12 +417,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Holcodiscidae" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyQ-7O-Sfq">
-                                                    <rect key="frame" x="19" y="10" width="336" height="39.5"/>
+                                                    <rect key="frame" x="19" y="0.0" width="336" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="30"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDw-Tf-ZBM">
+                                                    <rect key="frame" x="327" y="10" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="editpage"/>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -842,6 +847,7 @@
     <resources>
         <image name="Holcodiscidae_-_Spitidiscus_species.JPG" width="1635" height="1231"/>
         <image name="disc-list" width="16" height="16"/>
+        <image name="editpage" width="25" height="25"/>
         <image name="explore" width="25" height="25"/>
         <image name="history" width="25" height="25"/>
         <image name="icon-chevron-left" width="25" height="25"/>
