@@ -61,6 +61,37 @@
                     @"Apple Pay",
                     ] toArray:array];
     
+    //..
+    [self addText:@"History" key:___keyMt clickableTokens:@[] toArray:array];
+    
+    //..
+    //
+    [self       addText:@"Introduction and initial release [ edit source ]"
+                    key:___keyParT
+        clickableTokens:@[
+                          @"edit source"
+                          ]
+                toArray:array];
+    
+    //..
+    [self addText:@"iOS 11 was introduced at the Apple Worldwide Developers Conference keynote address on June 5, 2017.[3][4][5] The first developer beta version was released after the keynote presentation, with a public beta set for release later in mid-2017, and a final version for end-users in late 2017."
+              key:___keyPar
+  clickableTokens:@[
+                    @"Apple Worldwide Developers Conference",
+                    @"[3]",
+                    @"[4]",
+                    @"[5]",
+                    @"beta version",
+                    ] toArray:array];
+    
+    
+    //..
+    //
+    [self       addText:@""
+                    key:___keyWikiLogo
+        clickableTokens:@[]
+                toArray:array];
+
     result[kKeyDataDictItems] = array;
     
     return result;

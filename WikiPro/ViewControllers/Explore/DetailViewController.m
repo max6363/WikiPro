@@ -9,9 +9,10 @@
 #import "DetailViewController.h"
 #import "ImageViewCell.h"
 #import "TitleCell.h"
+#import "ParagraphTitleCell.h"
 #import "ParagraphCell.h"
 
-@interface DetailViewController () <UITableViewDataSource,UITableViewDelegate,ParagraphCellDelegate>
+@interface DetailViewController () <UITableViewDataSource,UITableViewDelegate,ParagraphCellDelegate, ParagraphTitleCellDelegate>
 {
     __weak IBOutlet UITableView *theTableView;
 }
@@ -74,6 +75,13 @@
         CGSize size = [text getSizeWithConstrainedWidth:cell.lblTitle.frame.size.width font:font];
         return (size.height < 60 ? 60 : size.height);
         
+    } else if ([key isEqualToString:___keyParT]) {
+        ParagraphTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ParagraphTitleCell"];
+        UIFont *font = cell.lblTitle.font;
+        
+        NSString *text = d[___kDataKeyText];
+        CGSize size = [text getSizeWithConstrainedWidth:cell.lblTitle.frame.size.width font:font];
+        return size.height + 30;
     } else if ([key isEqualToString:___keyPar]) {
         ParagraphCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ParagraphCell"];
         UIFont *font = cell.lblTitle.font;
@@ -81,6 +89,9 @@
         NSString *text = d[___kDataKeyText];
         CGSize size = [text getSizeWithConstrainedWidth:cell.lblTitle.frame.size.width font:font];
         return size.height + 50;
+    } else if ([key isEqualToString:___keyWikiLogo]) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"wiki_logo"];
+        return cell.contentView.frame.size.height;
     }
     return 0;
 }
@@ -95,6 +106,7 @@
     
     if ([key isEqualToString:___keyImgUrl]) {
         ImageViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ImageViewCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell.imgView setImageWithURL:[NSURL URLWithString:text] placeholderImage:nil options:SDWebImageRefreshCached completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             if (error) {
                 
@@ -107,11 +119,22 @@
         
     } else if ([key isEqualToString:___keyMt]) {
         TitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TitleCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.lblTitle.text = text;
         return cell;
         
+    } else if ([key isEqualToString:___keyParT]) {
+        ParagraphTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ParagraphTitleCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.lblTitle.text = text;
+        cell.dataDict = d;
+        cell.lblTitle.hidden = YES;
+        cell.delegate = self;
+        [cell updateLinksAndText];
+        return cell;
     } else if ([key isEqualToString:___keyPar]) {
         ParagraphCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ParagraphCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.lblTitle.text = text;
         cell.dataDict = d;
         cell.lblTitle.hidden = YES;
@@ -119,16 +142,28 @@
         [cell updateLinksAndText];
         return cell;
     }
-    
+    else if ([key isEqualToString:___keyWikiLogo]) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"wiki_logo"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"blank_cell"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 
 #pragma mark - ParagraphCellDelegate
-- (void)didSelectLinkWithText:(NSString *)text
+- (void)paragraphCell:(ParagraphCell *)paragraphCell didSelectLinkWithText:(NSString *)text
 {
     NSLog(@"Selected: %@", text);
 }
+
+#pragma mark - ParagraphTitleCellDelegate
+- (void)paragraphTitleCell:(ParagraphTitleCell *)paragraphTitleCell didSelectLinkWithText:(NSString *)text
+{
+    NSLog(@"Selected: %@", text);
+}
+
 @end

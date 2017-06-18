@@ -19,9 +19,11 @@
 // pt1-pt100
 // p1-p100
 
-#define ___keyImgUrl    @"___keyImgUrl"
-#define ___keyMt    @"___keyMt"
-#define ___keyPar   @"___keyPar"
+#define ___keyImgUrl        @"___keyImgUrl"
+#define ___keyMt            @"___keyMt"
+#define ___keyParT          @"___keyParT"
+#define ___keyPar           @"___keyPar"
+#define ___keyWikiLogo      @"___keyWikiLogo"
 
 #define ___kDataKeyText                     @"___kDataKeyText"
 #define ___kDataKeyTextType                 @"___kDataKeyTextType"

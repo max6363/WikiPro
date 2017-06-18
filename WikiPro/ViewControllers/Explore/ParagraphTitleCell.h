@@ -1,5 +1,5 @@
 //
-//  ParagraphCell.h
+//  ParagraphTitleCell.h
 //  WikiPro
 //
 //  Created by Minhaz on 18/06/17.
@@ -8,22 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ParagraphCellDelegate;
+@protocol ParagraphTitleCellDelegate;
 
-@interface ParagraphCell : UITableViewCell
-
+@interface ParagraphTitleCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet FRHyperLabel *lblTitleWithLinks;
 @property (nonatomic) NSMutableDictionary *dataDict;
-@property (nonatomic) id <ParagraphCellDelegate> delegate;
+@property (nonatomic) id <ParagraphTitleCellDelegate> delegate;
 
 - (void)updateLinksAndText;
-
 @end
 
-@protocol ParagraphCellDelegate <NSObject>
+@protocol ParagraphTitleCellDelegate <NSObject>
 
 @optional
-- (void)paragraphCell:(ParagraphCell *)paragraphCell  didSelectLinkWithText:(NSString *)text;
+- (void)paragraphTitleCell:(ParagraphTitleCell *)paragraphTitleCell  didSelectLinkWithText:(NSString *)text;
 
 @end

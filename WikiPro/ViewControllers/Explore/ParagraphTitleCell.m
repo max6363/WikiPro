@@ -1,14 +1,14 @@
 //
-//  ParagraphCell.m
+//  ParagraphTitleCell.m
 //  WikiPro
 //
 //  Created by Minhaz on 18/06/17.
 //  Copyright © 2017 iqtech. All rights reserved.
 //
 
-#import "ParagraphCell.h"
+#import "ParagraphTitleCell.h"
 
-@implementation ParagraphCell
+@implementation ParagraphTitleCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -32,8 +32,8 @@
     
     //Step 2: Define a selection handler block
     void(^handler)(FRHyperLabel *label, NSString *substring) = ^(FRHyperLabel *label, NSString *substring){
-        if (self.delegate && [self.delegate respondsToSelector:@selector(paragraphCell:didSelectLinkWithText:)]) {
-            [self.delegate paragraphCell:self didSelectLinkWithText:substring];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(paragraphTitleCell:didSelectLinkWithText:)]) {
+            [self.delegate paragraphTitleCell:self didSelectLinkWithText:substring];
         }
     };
     
@@ -41,5 +41,6 @@
     //Step 3: Add link substrings
     [_lblTitleWithLinks setLinksForSubstrings:clickableStrings withLinkHandler:handler];
 }
+
 
 @end

@@ -12,6 +12,7 @@
 		881C41E81EF59BEF00814619 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C41E71EF59BEF00814619 /* SignInViewController.m */; };
 		881C41EB1EF59C0300814619 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C41EA1EF59C0300814619 /* SignUpViewController.m */; };
 		881C41EF1EF5A04600814619 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C41EE1EF5A04600814619 /* Utility.m */; };
+		8842D7901EF6B45C0018D3CA /* ParagraphTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842D78F1EF6B45C0018D3CA /* ParagraphTitleCell.m */; };
 		88AA88B11EF6827100232BEA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88B01EF6827100232BEA /* DetailViewController.m */; };
 		88AA88B41EF68B3300232BEA /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88B31EF68B3300232BEA /* DataManager.m */; };
 		88AA88B81EF696BD00232BEA /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88B71EF696BD00232BEA /* ImageViewCell.m */; };
@@ -68,6 +69,8 @@
 		881C41EA1EF59C0300814619 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		881C41ED1EF5A04600814619 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		881C41EE1EF5A04600814619 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		8842D78E1EF6B45C0018D3CA /* ParagraphTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphTitleCell.h; sourceTree = "<group>"; };
+		8842D78F1EF6B45C0018D3CA /* ParagraphTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParagraphTitleCell.m; sourceTree = "<group>"; };
 		88AA88AE1EF680B500232BEA /* WikiPro-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WikiPro-PrefixHeader.pch"; sourceTree = "<group>"; };
 		88AA88AF1EF6827100232BEA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		88AA88B01EF6827100232BEA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 				88AA88BA1EF6977A00232BEA /* TitleCell.m */,
 				88AA88BC1EF697C600232BEA /* ParagraphCell.h */,
 				88AA88BD1EF697C600232BEA /* ParagraphCell.m */,
+				8842D78E1EF6B45C0018D3CA /* ParagraphTitleCell.h */,
+				8842D78F1EF6B45C0018D3CA /* ParagraphTitleCell.m */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -670,6 +675,7 @@
 				88F2B8EE1EF447C30002CE61 /* AppLauncher.m in Sources */,
 				88AA88B11EF6827100232BEA /* DetailViewController.m in Sources */,
 				88F2B9031EF449040002CE61 /* SavedViewController.m in Sources */,
+				8842D7901EF6B45C0018D3CA /* ParagraphTitleCell.m in Sources */,
 				88D78C8E1EF676A000D17E67 /* ExploreListCell.m in Sources */,
 				88F2B9041EF449040002CE61 /* SettingsViewController.m in Sources */,
 				88F2B9051EF449040002CE61 /* TabViewController.m in Sources */,
