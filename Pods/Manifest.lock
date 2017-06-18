@@ -1,4 +1,5 @@
 PODS:
+  - FRHyperLabel (1.0.3)
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
@@ -11,13 +12,23 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.5.7):
     - MMDrawerController/Core
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
 
 DEPENDENCIES:
+  - FRHyperLabel
   - MMDrawerController (~> 0.5.7)
+  - UIActivityIndicator-for-SDWebImage
 
 SPEC CHECKSUMS:
+  FRHyperLabel: 99d08d3667880b4c430071c9afbcb93aaaa34b37
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
 
-PODFILE CHECKSUM: 9a4cd6351eeca7a0d4fc76e7e457f3461284c680
+PODFILE CHECKSUM: bf1edc69060b1272333c09de41b83eb4566d2157
 
 COCOAPODS: 1.2.0

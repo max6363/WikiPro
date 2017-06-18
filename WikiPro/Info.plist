@@ -20,6 +20,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow "WikiPro" to access the camera.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow "WikiPro" to determine your locaiton.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow "WikiPro" to access the photo library.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

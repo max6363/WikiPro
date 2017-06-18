@@ -12,10 +12,16 @@
 		881C41E81EF59BEF00814619 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C41E71EF59BEF00814619 /* SignInViewController.m */; };
 		881C41EB1EF59C0300814619 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C41EA1EF59C0300814619 /* SignUpViewController.m */; };
 		881C41EF1EF5A04600814619 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C41EE1EF5A04600814619 /* Utility.m */; };
+		88AA88B11EF6827100232BEA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88B01EF6827100232BEA /* DetailViewController.m */; };
+		88AA88B41EF68B3300232BEA /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88B31EF68B3300232BEA /* DataManager.m */; };
+		88AA88B81EF696BD00232BEA /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88B71EF696BD00232BEA /* ImageViewCell.m */; };
+		88AA88BB1EF6977A00232BEA /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88BA1EF6977A00232BEA /* TitleCell.m */; };
+		88AA88BE1EF697C600232BEA /* ParagraphCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88BD1EF697C600232BEA /* ParagraphCell.m */; };
+		88AA88C11EF698A400232BEA /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA88C01EF698A400232BEA /* NSString+Utils.m */; };
+		88D78C8E1EF676A000D17E67 /* ExploreListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D78C8D1EF676A000D17E67 /* ExploreListCell.m */; };
+		88D78C911EF67F2300D17E67 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D78C901EF67F2300D17E67 /* UIView+Utils.m */; };
 		88F2B8AA1EF443350002CE61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F2B8A91EF443350002CE61 /* main.m */; };
 		88F2B8AD1EF443350002CE61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F2B8AC1EF443350002CE61 /* AppDelegate.m */; };
-		88F2B8B01EF443350002CE61 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F2B8AF1EF443350002CE61 /* FirstViewController.m */; };
-		88F2B8B31EF443350002CE61 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F2B8B21EF443350002CE61 /* SecondViewController.m */; };
 		88F2B8B61EF443350002CE61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F2B8B41EF443350002CE61 /* Main.storyboard */; };
 		88F2B8B81EF443350002CE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F2B8B71EF443350002CE61 /* Assets.xcassets */; };
 		88F2B8BB1EF443350002CE61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F2B8B91EF443350002CE61 /* LaunchScreen.storyboard */; };
@@ -62,14 +68,28 @@
 		881C41EA1EF59C0300814619 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		881C41ED1EF5A04600814619 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		881C41EE1EF5A04600814619 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		88AA88AE1EF680B500232BEA /* WikiPro-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WikiPro-PrefixHeader.pch"; sourceTree = "<group>"; };
+		88AA88AF1EF6827100232BEA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		88AA88B01EF6827100232BEA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		88AA88B21EF68B3300232BEA /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		88AA88B31EF68B3300232BEA /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		88AA88B51EF6943500232BEA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		88AA88B61EF696BD00232BEA /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewCell.h; sourceTree = "<group>"; };
+		88AA88B71EF696BD00232BEA /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewCell.m; sourceTree = "<group>"; };
+		88AA88B91EF6977A00232BEA /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		88AA88BA1EF6977A00232BEA /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		88AA88BC1EF697C600232BEA /* ParagraphCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphCell.h; sourceTree = "<group>"; };
+		88AA88BD1EF697C600232BEA /* ParagraphCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParagraphCell.m; sourceTree = "<group>"; };
+		88AA88BF1EF698A400232BEA /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		88AA88C01EF698A400232BEA /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		88D78C8C1EF676A000D17E67 /* ExploreListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreListCell.h; sourceTree = "<group>"; };
+		88D78C8D1EF676A000D17E67 /* ExploreListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreListCell.m; sourceTree = "<group>"; };
+		88D78C8F1EF67F2300D17E67 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		88D78C901EF67F2300D17E67 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
 		88F2B8A51EF443350002CE61 /* WikiPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F2B8A91EF443350002CE61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88F2B8AB1EF443350002CE61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88F2B8AC1EF443350002CE61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88F2B8AE1EF443350002CE61 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		88F2B8AF1EF443350002CE61 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		88F2B8B11EF443350002CE61 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		88F2B8B21EF443350002CE61 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		88F2B8B51EF443350002CE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F2B8B71EF443350002CE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F2B8BA1EF443350002CE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -198,6 +218,7 @@
 		88F2B8A71EF443350002CE61 /* WikiPro */ = {
 			isa = PBXGroup;
 			children = (
+				88AA88B51EF6943500232BEA /* Constants.h */,
 				881C41EC1EF5A03500814619 /* Utilities */,
 				88F2B9101EF4660A0002CE61 /* Resources */,
 				88F2B90C1EF45EB10002CE61 /* Categories */,
@@ -205,10 +226,6 @@
 				88F2B8DE1EF446730002CE61 /* ViewControllers */,
 				88F2B8AB1EF443350002CE61 /* AppDelegate.h */,
 				88F2B8AC1EF443350002CE61 /* AppDelegate.m */,
-				88F2B8AE1EF443350002CE61 /* FirstViewController.h */,
-				88F2B8AF1EF443350002CE61 /* FirstViewController.m */,
-				88F2B8B11EF443350002CE61 /* SecondViewController.h */,
-				88F2B8B21EF443350002CE61 /* SecondViewController.m */,
 				88F2B8B41EF443350002CE61 /* Main.storyboard */,
 				88F2B8B71EF443350002CE61 /* Assets.xcassets */,
 				88F2B8B91EF443350002CE61 /* LaunchScreen.storyboard */,
@@ -222,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				88F2B8A91EF443350002CE61 /* main.m */,
+				88AA88AE1EF680B500232BEA /* WikiPro-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -274,6 +292,18 @@
 				88F2B8F41EF449040002CE61 /* ExploreViewController.m */,
 				88F2B9151EF4A7760002CE61 /* ExploreDetailViewController.h */,
 				88F2B9161EF4A7760002CE61 /* ExploreDetailViewController.m */,
+				88D78C8C1EF676A000D17E67 /* ExploreListCell.h */,
+				88D78C8D1EF676A000D17E67 /* ExploreListCell.m */,
+				88AA88AF1EF6827100232BEA /* DetailViewController.h */,
+				88AA88B01EF6827100232BEA /* DetailViewController.m */,
+				88AA88B21EF68B3300232BEA /* DataManager.h */,
+				88AA88B31EF68B3300232BEA /* DataManager.m */,
+				88AA88B61EF696BD00232BEA /* ImageViewCell.h */,
+				88AA88B71EF696BD00232BEA /* ImageViewCell.m */,
+				88AA88B91EF6977A00232BEA /* TitleCell.h */,
+				88AA88BA1EF6977A00232BEA /* TitleCell.m */,
+				88AA88BC1EF697C600232BEA /* ParagraphCell.h */,
+				88AA88BD1EF697C600232BEA /* ParagraphCell.m */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -321,6 +351,10 @@
 			children = (
 				88F2B90D1EF45EB10002CE61 /* UIColor+Utils.h */,
 				88F2B90E1EF45EB10002CE61 /* UIColor+Utils.m */,
+				88D78C8F1EF67F2300D17E67 /* UIView+Utils.h */,
+				88D78C901EF67F2300D17E67 /* UIView+Utils.m */,
+				88AA88BF1EF698A400232BEA /* NSString+Utils.h */,
+				88AA88C01EF698A400232BEA /* NSString+Utils.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -634,19 +668,25 @@
 			files = (
 				881C41E81EF59BEF00814619 /* SignInViewController.m in Sources */,
 				88F2B8EE1EF447C30002CE61 /* AppLauncher.m in Sources */,
-				88F2B8B31EF443350002CE61 /* SecondViewController.m in Sources */,
+				88AA88B11EF6827100232BEA /* DetailViewController.m in Sources */,
 				88F2B9031EF449040002CE61 /* SavedViewController.m in Sources */,
+				88D78C8E1EF676A000D17E67 /* ExploreListCell.m in Sources */,
 				88F2B9041EF449040002CE61 /* SettingsViewController.m in Sources */,
 				88F2B9051EF449040002CE61 /* TabViewController.m in Sources */,
+				88AA88B41EF68B3300232BEA /* DataManager.m in Sources */,
 				88F2B8AD1EF443350002CE61 /* AppDelegate.m in Sources */,
 				88F2B9081EF449180002CE61 /* SettingsCell.m in Sources */,
 				881C41EF1EF5A04600814619 /* Utility.m in Sources */,
 				88F2B9171EF4A7760002CE61 /* ExploreDetailViewController.m in Sources */,
+				88AA88BB1EF6977A00232BEA /* TitleCell.m in Sources */,
 				88F2B90F1EF45EB10002CE61 /* UIColor+Utils.m in Sources */,
-				88F2B8B01EF443350002CE61 /* FirstViewController.m in Sources */,
+				88AA88B81EF696BD00232BEA /* ImageViewCell.m in Sources */,
+				88AA88C11EF698A400232BEA /* NSString+Utils.m in Sources */,
+				88AA88BE1EF697C600232BEA /* ParagraphCell.m in Sources */,
 				881C41EB1EF59C0300814619 /* SignUpViewController.m in Sources */,
 				88F2B9011EF449040002CE61 /* ExploreViewController.m in Sources */,
 				88F2B9021EF449040002CE61 /* HistoryViewController.m in Sources */,
+				88D78C911EF67F2300D17E67 /* UIView+Utils.m in Sources */,
 				88F2B8AA1EF443350002CE61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,6 +840,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RS9ZBZ6GCU;
+				GCC_PREFIX_HEADER = "WikiPro/WikiPro-PrefixHeader.pch";
 				INFOPLIST_FILE = WikiPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqtech.WikiPro;
@@ -813,6 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RS9ZBZ6GCU;
+				GCC_PREFIX_HEADER = "WikiPro/WikiPro-PrefixHeader.pch";
 				INFOPLIST_FILE = WikiPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqtech.WikiPro;

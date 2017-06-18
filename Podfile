@@ -7,6 +7,9 @@ target 'WikiPro' do
 
   # Pods for WikiPro
 	pod 'MMDrawerController', '~> 0.5.7'
+    pod 'UIActivityIndicator-for-SDWebImage'
+    pod 'FRHyperLabel'
+    
   target 'WikiProTests' do
     inherit! :search_paths
     # Pods for testing
