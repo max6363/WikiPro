@@ -286,12 +286,24 @@
     [self addText:@"Notes" key:___keyMt clickableTokens:@[] toArray:array];
     
     //..
-    [self addText:@""
+    [self addText:@"1. The Paleobiology Database\n2. Wright, C. W. with J.H. Callomon and M.K. Howarth (1996), Mollusca 4 Revised, Cretaceous Ammonoidea, vol. 4, in Treatise on Invertebrate Paleontology, Part L (Roger L. Kaesler et el. eds.), Boulder, Colorado: The Geological Society of America & Lawrence, Kansas: University of Kansas Press, p.48.\n3. Tzankov, V. & Breskovski, S. (1982), \"Volume et contenu de la famille Holcodiscidae Spath, 1924,\" C.R. Acad. bulg. Sci., 35, 4, 491-93."
               key:___keyPar
   clickableTokens:@[
-                    @"Cretaceous",
-                    @"1",
-                    @"2",
+                    @"The Paleobiology Database",
+                    @"Wright, C. W. with J.H. Callomon and M.K. Howarth (1996), Mollusca 4 Revised, Cretaceous Ammonoidea, vol. 4",
+                    @"Treatise on Invertebrate Paleontology",
+                    ] toArray:array];
+    
+    //..
+    [self addText:@"References" key:___keyMt clickableTokens:@[] toArray:array];
+    
+    //..
+    [self addText:@"* Arkell, W. J. et al, (1957). Mesozoic Ammonoidea in Treatise on Invertebrate Paleontology, Part L, Ammonoidea. Geological Society of America and Univ Kansas Press.\n* This ammonite-related article is a stub. You can help Wikipedia by expanding it."
+              key:___keyPar
+  clickableTokens:@[
+                    @"ammonite",
+                    @"stub",
+                    @"expanding it",
                     ] toArray:array];
     
     //..
