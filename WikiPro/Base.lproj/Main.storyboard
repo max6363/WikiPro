@@ -458,10 +458,25 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-fi-YiK" customClass="FRHyperLabel">
+                                                    <rect key="frame" x="19" y="13" width="337" height="222"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment>
+                                                            <string key="content">Moderately involute with rounded, rectangular, or depressed whorl section; straight or sinous, fine, dense ribs typically continuing over venter and may be periodically truncated by oblique, enlarged ribs, with or without embilical, lateral and ventrolateral tubercles. Suture rather simple.</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1.5" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblTitle" destination="Dev-Vo-sRB" id="j3v-rM-8Rm"/>
+                                            <outlet property="lblTitleWithLinks" destination="RbM-fi-YiK" id="O0g-3G-jP1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
